@@ -43,7 +43,6 @@ body {
     align-items: center;
     padding: 20px;
     position: fixed;
-    /*backdrop-filter: blur(10px);*/
     z-index: 125;
 }
 
@@ -278,7 +277,6 @@ body {
     }
 
 }
-
 
 .textContainer {
     display: flex;
