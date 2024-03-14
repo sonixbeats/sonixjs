@@ -95,7 +95,7 @@ body {
     flex-direction: column;
     letter-spacing: 5px;
 
-    h1{
+    h1 {
         animation: Opcity 5s cubic-bezier(0.075, 0.82, 0.165, 1), stretchtext 1.5s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }
@@ -228,7 +228,7 @@ body {
         width: 600px !important;
     }
 
-    .projectOpen{
+    .projectOpen {
         width: 700px;
         height: 700px;
         display: flex;
@@ -236,7 +236,7 @@ body {
         align-items: center;
         margin-left: 57px;
 
-        .projectContent{
+        .projectContent {
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -250,7 +250,7 @@ body {
             padding: 5px;
             transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-            .projectImage{
+            .projectImage {
                 width: 100%;
                 height: 300px;
                 border-radius: 15px;
@@ -327,7 +327,62 @@ body {
             transform: scale(0.95);
         }
     }
+}
 
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    .logo{
+        position: absolute;
+        left: 43%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+            width: 300px;
+            transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            mix-blend-mode: color-dodge;
+        }
+    }
+
+    .social {
+        margin-left: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 100%;
+        align-content: center;
+        flex-wrap: wrap;
+
+        ion-icon {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            color: #ffffff;
+            transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        ion-icon:hover {
+            transform: scale(1.1) translateY(-10px) rotate(5deg);
+            color: #b6f353;            
+        }
+
+        ion-icon:active {
+            transform: scale(0.9) translateY(-10px) rotate(-5deg);
+        }
+    }
 }
 
 .textContainer {
@@ -412,11 +467,11 @@ body {
     animation: INFINITEROUND 0.5s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.animated3{
+.animated3 {
     animation: floatingAround 1s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.animated4{
+.animated4 {
     animation: floatingWobble 3s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -499,7 +554,7 @@ body {
     }
 }
 
-.rotate{
+.rotate {
     animation: INFINITEROUNDStretch 2s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
@@ -527,8 +582,36 @@ body {
     user-select: none;
 }
 
-.cutpage{
+.cutpage {
     background-color: #b6f353;
     width: 100%;
     height: 20px;
+}
+
+@keyframes effect {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+span {
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform-origin: 0px 150px;
+    transform-style: flat;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+}
+
+.circularTextAnim {
+    position: absolute;
+    top: 83.5%;
+    right: 4%;
+    clip: rect(0px, 300px, 150px, 0px);
 }
