@@ -65,7 +65,7 @@
             </p>
         </div>
 
-        <div style="
+        <div class="animated3" style="
             margin-left: 100px;
         ">
             <img src="public/Images/wallpapergrain.png" alt="" style="
@@ -103,11 +103,13 @@
         z-index: -1;
         "></ion-icon>
 
-        <div style="display: flex; justify-content: center; align-items: center; position: absolute; left: 50%; transform: translate(-52%, -50%); ">
+        <div
+            style="display: flex; justify-content: center; align-items: center; position: absolute; left: 50%; transform: translate(-52%, -50%); ">
             <div
                 style="width: 10px; height: 10px; background-color: aliceblue; margin-right: 10px; border-radius: 40px;">
             </div>
-            <div style="width: 400px; background-color: aliceblue; height: 5px; border-radius: 40px;"></div>
+            <div style="width: 400px; background-color: aliceblue; height: 5px; border-radius: 40px; opacity: 0.4;">
+            </div>
             <div
                 style="width: 10px; height: 10px; background-color: aliceblue; margin-left: 10px; border-radius: 40px;">
             </div>
@@ -159,50 +161,107 @@
 
         <div class="projectContainer">
             <div class="project">
-                <a style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
+                <a onclick="document.getElementById('AP1').style.display = 'flex';
+                            document.getElementById('AP2').style.display = 'none';
+                            document.getElementById('AP3').style.display = 'none';
+                            document.getElementById('AP4').style.display = 'none';
+                " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
-                    <h3>ap 1</h3>
-                    <p>description du projet 1</p>
+                    <h3 style="font-weight: 100;">ap 1</h3>
+                    <p style="font-weight: 100;">2 0 2 2</p>
+                </a>
+            </div>
+            <div class="project">
+                <a onclick="document.getElementById('AP2').style.display = 'flex';
+                            document.getElementById('AP1').style.display = 'none';
+                            document.getElementById('AP3').style.display = 'none';
+                            document.getElementById('AP4').style.display = 'none';
+                " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
+                    <img src="public/Images/Icon.png" alt="project">
+                    <h3 style="font-weight: 100;">ap 2</h3>
+                    <p style="font-weight: 100;">2 0 2 3</p>
+                </a>
+            </div>
+            <div class="project">
+                <a onclick="document.getElementById('AP3').style.display = 'flex';
+                            document.getElementById('AP2').style.display = 'none';
+                            document.getElementById('AP1').style.display = 'none';
+                            document.getElementById('AP4').style.display = 'none';
+                "
+                    style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
+                    <img src="public/Images/Icon.png" alt="project">
+                    <h3 style="font-weight: 100;">ap 3</h3>
+                    <p style="font-weight: 100;">2 0 2 3</p>
                 </a>
             </div>
             <div class="project">
                 <a style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
-                    <h3>ap 2</h3>
-                    <p>description du projet 2</p>
+                    <h3 style="font-weight: 100;">poke gl</h3>
+                    <p style="font-weight: 100;">2 0 2 3</p>
                 </a>
             </div>
             <div class="project">
                 <a style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
-                    <h3>ap 3</h3>
-                    <p>description du projet 3</p>
+                    <h3 style="font-weight: 100;">ap 4</h3>
+                    <p style="font-weight: 100;">2 0 2 4</p>
                 </a>
             </div>
             <div class="project">
                 <a style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
-                    <h3>ap 4</h3>
-                    <p>description du projet 3</p>
-                </a>
-            </div>
-            <div class="project">
-                <a style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
-                    <img src="public/Images/Icon.png" alt="project">
-                    <h3>ap C#</h3>
-                    <p>description du projet 3</p>
+                    <h3 style="font-weight: 100;">ap C#</h3>
+                    <p style="font-weight: 100;">2 0 2 4</p>
                 </a>
             </div>
         </div>
 
-        <div class="projectOpen">
+        <div class="projectOpen animate__animated animate__bounceIn" id="AP1" style="display: none;">
             <div class="projectContent">
                 <div class="projectImage">
-                    <img src="public/Images/Icon.png" alt="project" width="200">
+                    <img src="public/Images/Screenshot1.png" alt="project" width="200">
                 </div>
                 <div class="projectText">
-                    <h3>ap 1</h3>
-                    <p>description du projet 1</p>
+                    <h3 style="font-weight: 100;">ap 1</h3>
+                    <p style="font-weight: 100;">réalisation d'un site internet dynamique avec javascript from scratch
+                        traitant d'une équipe e-sport pour le jeu Overwatch anciennement nommé paris éternal.
+                        <br><br>
+                        technologies utilisé : html, css, javascript
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectOpen animate__animated animate__bounceIn" id="AP2" style="display: none;">
+            <div class="projectContent">
+                <div class="projectImage">
+                    <img src="public/Images/screenshot2.png" alt="project" width="200">
+                </div>
+                <div class="projectText">
+                    <h3 style="font-weight: 100;">ap 2</h3>
+                    <p style="font-weight: 100;">reprise de l'ap 1 avec l'ajout de nouvelles fonctionnalités, le site
+                        est dynamique utilisant php et une base de données sql, et laragon comme serveur locale. le site
+                        dispose donc d'un crud pour gérer les adhérents, utilisateur pouvant s'inscrire.
+                        <br><br>
+                        technologies utilisé : html, css, javascript, php, sql, laragon
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectOpen animate__animated animate__bounceIn" id="AP3" style="display: none;">
+            <div class="projectContent">
+                <div class="projectImage">
+                    <img src="public/Images/screenshot3.png" alt="project" width="200">
+                </div>
+                <div class="projectText">
+                    <h3 style="font-weight: 100;">ap 3</h3>
+                    <p style="font-weight: 100;">Développement d'un site dynamique de vente de musiques, gestion des
+                        productions, musiques, utilisateurs, panier, etc...
+                        <br><br>
+                        technologies utilisé : html, css, javascript, php (code igniter), sql, laragon, sql server 2019
+                    </p>
                 </div>
             </div>
         </div>

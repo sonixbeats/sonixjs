@@ -203,6 +203,7 @@ body {
         }
 
         .skill:hover {
+            background-color: #202020;
             transform: scale(1.1) translateY(-10px) rotate(5deg);
         }
 
@@ -409,6 +410,50 @@ body {
 
 .animated2 {
     animation: INFINITEROUND 0.5s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.animated3{
+    animation: floatingAround 1s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.animated4{
+    animation: floatingWobble 3s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes floatingWobble {
+    0% {
+        transform: translateX(0) translateY(-10px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(10px) translateY(0) rotate(5deg);
+    }
+
+    50% {
+        transform: translateX(0) translateY(10px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateX(-10px) translateY(0) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(-10px) rotate(0deg);
+    }
+}
+
+@keyframes floatingAround {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes SlideInLeftImg {
