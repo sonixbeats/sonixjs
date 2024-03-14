@@ -678,7 +678,16 @@ span {
         letter-spacing: 5px;
 
         h1 {
+            font-weight: 100;
+            mix-blend-mode: normal;
+            color: #b6f353;
             animation: Opcity 5s cubic-bezier(0.075, 0.82, 0.165, 1), stretchtext 1.5s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        p{
+            font-size: 20px;
+            color: #b6f353;
+            mix-blend-mode: normal;
         }
 
         img{
