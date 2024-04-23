@@ -194,6 +194,8 @@
                             document.getElementById('AP2').style.display = 'none';
                             document.getElementById('AP3').style.display = 'none';
                             document.getElementById('AP4').style.display = 'none';
+                            document.getElementById('APCSHARP').style.display = 'none';
+                            document.getElementById('POKEGL').style.display = 'none';
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 1</h3>
@@ -205,6 +207,8 @@
                             document.getElementById('AP1').style.display = 'none';
                             document.getElementById('AP3').style.display = 'none';
                             document.getElementById('AP4').style.display = 'none';
+                            document.getElementById('APCSHARP').style.display = 'none';
+                            document.getElementById('POKEGL').style.display = 'none';
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 2</h3>
@@ -216,6 +220,8 @@
                             document.getElementById('AP2').style.display = 'none';
                             document.getElementById('AP1').style.display = 'none';
                             document.getElementById('AP4').style.display = 'none';
+                            document.getElementById('APCSHARP').style.display = 'none';
+                            document.getElementById('POKEGL').style.display = 'none';
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 3</h3>
@@ -227,6 +233,8 @@
                             document.getElementById('AP2').style.display = 'none';
                             document.getElementById('AP3').style.display = 'none';
                             document.getElementById('AP1').style.display = 'none';
+                            document.getElementById('APCSHARP').style.display = 'none';
+                            document.getElementById('POKEGL').style.display = 'none';
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 4</h3>
@@ -234,17 +242,31 @@
                 </a>
             </div>
             <div class="project">
-                <a style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
-                    <img src="public/Images/Icon.png" alt="project">
-                    <h3 style="font-weight: 100;">poke gl</h3>
-                    <p style="font-weight: 100;">2 0 2 3</p>
-                </a>
-            </div>
-            <div class="project">
-                <a style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
+                <a onclick="
+                            document.getElementById('APCSHARP').style.display = 'flex';
+                            document.getElementById('AP2').style.display = 'none';
+                            document.getElementById('AP3').style.display = 'none';
+                            document.getElementById('AP1').style.display = 'none';
+                            document.getElementById('AP4').style.display = 'none';
+                            document.getElementById('POKEGL').style.display = 'none';
+                " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap C#</h3>
                     <p style="font-weight: 100;">2 0 2 4</p>
+                </a>
+            </div>
+            <div class="project">
+                <a onclick="
+                            document.getElementById('POKEGL').style.display = 'flex';
+                            document.getElementById('AP2').style.display = 'none';
+                            document.getElementById('AP3').style.display = 'none';
+                            document.getElementById('AP1').style.display = 'none';
+                            document.getElementById('AP4').style.display = 'none';
+                            document.getElementById('APCSHARP').style.display = 'none';
+                    " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
+                    <img src="public/Images/Icon.png" alt="project">
+                    <h3 style="font-weight: 100;">poke gl</h3>
+                    <p style="font-weight: 100;">2 0 2 3</p>
                 </a>
             </div>
         </div>
@@ -305,10 +327,40 @@
                 </div>
                 <div class="projectText">
                     <h3 style="font-weight: 100;">ap 4</h3>
-                    <p style="font-weight: 100;">Développement d'une application dynamique de vente de musiques, gestion des
+                    <p style="font-weight: 100;">Développement d'une application mobile dynamique de vente de musiques, gestion des
                         productions, musiques, utilisateurs, panier, etc...
                         <br><br>
                         technologies utilisé : React Native, css, javascript, C# pour l'api
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectOpen animate__animated animate__fadeIn" id="APCSHARP" style="display: none;">
+            <div class="projectContent">
+                <div class="projectImage">
+                    <img src="public/Images/screencsharp.png" alt="project" width="200">
+                </div>
+                <div class="projectText">
+                    <h3 style="font-weight: 100;">projet c# guitare</h3>
+                    <p style="font-weight: 100;">Développement d'une application dynamique de vente de de guitare avec possibilité de les customiser, avec le choix de chaque pièces et le bois qui s'accorde avec.
+                        <br><br>
+                        technologies utilisé : c#, sql, webapi
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectOpen animate__animated animate__fadeIn" id="POKEGL" style="display: none;">
+            <div class="projectContent">
+                <div class="projectImage">
+                    <img src="public/Images/PokeGL.png" alt="project" width="200">
+                </div>
+                <div class="projectText">
+                    <h3 style="font-weight: 100;">projet c# pokegl</h3>
+                    <p style="font-weight: 100;">Développement d'un jeu en 2D de combat entre 2 pokémon, le jeu est en tour par tour, utilisant des attaques basiques ou critique selon le pourcentage de chance qui peut être augmenté après chaque adversaire vaincu.
+                        <br><br>
+                        technologies utilisé : c#, open gl
                     </p>
                 </div>
             </div>
