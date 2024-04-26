@@ -196,6 +196,8 @@
                             document.getElementById('AP4').style.display = 'none';
                             document.getElementById('APCSHARP').style.display = 'none';
                             document.getElementById('POKEGL').style.display = 'none';
+                            document.getElementById('ARTPRJ').style.display = 'none';
+
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 1</h3>
@@ -209,6 +211,8 @@
                             document.getElementById('AP4').style.display = 'none';
                             document.getElementById('APCSHARP').style.display = 'none';
                             document.getElementById('POKEGL').style.display = 'none';
+                            document.getElementById('ARTPRJ').style.display = 'none';
+
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 2</h3>
@@ -222,6 +226,8 @@
                             document.getElementById('AP4').style.display = 'none';
                             document.getElementById('APCSHARP').style.display = 'none';
                             document.getElementById('POKEGL').style.display = 'none';
+                            document.getElementById('ARTPRJ').style.display = 'none';
+
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 3</h3>
@@ -235,6 +241,8 @@
                             document.getElementById('AP1').style.display = 'none';
                             document.getElementById('APCSHARP').style.display = 'none';
                             document.getElementById('POKEGL').style.display = 'none';
+                            document.getElementById('ARTPRJ').style.display = 'none';
+
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap 4</h3>
@@ -249,6 +257,8 @@
                             document.getElementById('AP1').style.display = 'none';
                             document.getElementById('AP4').style.display = 'none';
                             document.getElementById('POKEGL').style.display = 'none';
+                            document.getElementById('ARTPRJ').style.display = 'none';
+
                 " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">ap C#</h3>
@@ -263,10 +273,27 @@
                             document.getElementById('AP1').style.display = 'none';
                             document.getElementById('AP4').style.display = 'none';
                             document.getElementById('APCSHARP').style.display = 'none';
+                            document.getElementById('ARTPRJ').style.display = 'none';
                     " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
                     <img src="public/Images/Icon.png" alt="project">
                     <h3 style="font-weight: 100;">poke gl</h3>
                     <p style="font-weight: 100;">2 0 2 3</p>
+                </a>
+            </div>
+
+            <div class="project">
+                <a onclick="
+                            document.getElementById('ARTPRJ').style.display = 'flex';
+                            document.getElementById('POKEGL').style.display = 'none';
+                            document.getElementById('AP2').style.display = 'none';
+                            document.getElementById('AP3').style.display = 'none';
+                            document.getElementById('AP1').style.display = 'none';
+                            document.getElementById('AP4').style.display = 'none';
+                            document.getElementById('APCSHARP').style.display = 'none';
+                    " style="width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
+                    <img src="public/Images/Icon.png" alt="project">
+                    <h3 style="font-weight: 100;">ART</h3>
+                    <p style="font-weight: 100;">2 0 2 4</p>
                 </a>
             </div>
         </div>
@@ -327,7 +354,8 @@
                 </div>
                 <div class="projectText">
                     <h3 style="font-weight: 100;">ap 4</h3>
-                    <p style="font-weight: 100;">Développement d'une application mobile dynamique de vente de musiques, gestion des
+                    <p style="font-weight: 100;">Développement d'une application mobile dynamique de vente de musiques,
+                        gestion des
                         productions, musiques, utilisateurs, panier, etc...
                         <br><br>
                         technologies utilisé : React Native, css, javascript, C# pour l'api
@@ -343,7 +371,8 @@
                 </div>
                 <div class="projectText">
                     <h3 style="font-weight: 100;">projet c# guitare</h3>
-                    <p style="font-weight: 100;">Développement d'une application dynamique de vente de de guitare avec possibilité de les customiser, avec le choix de chaque pièces et le bois qui s'accorde avec.
+                    <p style="font-weight: 100;">Développement d'une application dynamique de vente de de guitare avec
+                        possibilité de les customiser, avec le choix de chaque pièces et le bois qui s'accorde avec.
                         <br><br>
                         technologies utilisé : c#, sql, webapi
                     </p>
@@ -358,10 +387,42 @@
                 </div>
                 <div class="projectText">
                     <h3 style="font-weight: 100;">projet c# pokegl</h3>
-                    <p style="font-weight: 100;">Développement d'un jeu en 2D de combat entre 2 pokémon, le jeu est en tour par tour, utilisant des attaques basiques ou critique selon le pourcentage de chance qui peut être augmenté après chaque adversaire vaincu.
+                    <p style="font-weight: 100;">Développement d'un jeu en 2D de combat entre 2 pokémon, le jeu est en
+                        tour par tour, utilisant des attaques basiques ou critique selon le pourcentage de chance qui
+                        peut être augmenté après chaque adversaire vaincu.
                         <br><br>
                         technologies utilisé : c#, open gl
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectOpen animate__animated animate__fadeIn" id="ARTPRJ" style="display: none;">
+            <div class="projectContent" style="overflow: auto; justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            align-content: flex-start;
+            ">
+                <div class="projectImage" style="width: 300px; margin: 20px;">
+                    <img src="public/Images/Billie.png" alt="project" width="50">
+                </div>
+                <div class="projectImage" style="width: 300px; margin: 20px;">
+                    <img src="public/Images/DUNE poster.png" alt="project" width="50">
+                </div>
+                <div class="projectImage" style="width: 300px; margin: 20px;">
+                    <img src="public/Images/Vladimir cauchemar poster.png" alt="project" width="50">
+                </div>
+                <div class="projectImage" style="width: 300px; margin: 20px;">
+                    <img src="public/Images/FrierenPoster.png" alt="project" width="50">
+                </div>
+                <div class="projectImage" style="width: 300px; margin: 20px;">
+                    <img src="public/Images/Desillusion Poster.png" alt="project" width="50">
+                </div>
+                <div class="projectImage" style="width: 300px; margin: 20px;">
+                    <img src="public/Images/Desillusion Poster remix.png" alt="project" width="50">
+                </div>
+                <div class="projectImage" style="width: 300px; margin: 20px;">
+                    <video src="public/Images/First Motion Poster.mp4" style="border-radius: 20px;" width="300" ></video>
                 </div>
             </div>
         </div>
@@ -371,33 +432,41 @@
     </div>
 
     <section id="stage">
-            <h2 class="title">s t a g e s</h2>
-            <div class="tableau">
-                <div class="tableauContent">
-                    <div class="tableauText">
-                        <h3 style="font-weight: 100;">stage de première année</h3>
-                        <p style="font-weight: 100;">stage de 1 mois et 2 semaines en entreprise, au <br><a href="https://www.lyceedelasalle.com/college-lycee-la-salle-ales" target="_blank">Lycée de La Salle</a><br> en tant que développeur web et Informaticien.
-                            <br><br>
-                            j'ai pu travailler sur des projets internes de l'entreprise, en utilisant les technologies
-                            suivantes : html, css, javascript. pour la réalisation d'un site web pour la présentation de la section ciel (cybersécurité, informatique et réseaux, électronique) du lycée et un autre pour les portes ouvertes.
-                    </div>
-                    <div class="tableauImage">
-                        <img src="public/Images/Screen2.png" alt="3ds" width="200">
-                    </div>
+        <h2 class="title">s t a g e s</h2>
+        <div class="tableau">
+            <div class="tableauContent">
+                <div class="tableauText">
+                    <h3 style="font-weight: 100;">stage de première année</h3>
+                    <p style="font-weight: 100;">stage de 1 mois et 2 semaines en entreprise, au <br><a
+                            href="https://www.lyceedelasalle.com/college-lycee-la-salle-ales" target="_blank">Lycée de
+                            La Salle</a><br> en tant que développeur web et Informaticien.
+                        <br><br>
+                        j'ai pu travailler sur des projets internes de l'entreprise, en utilisant les technologies
+                        suivantes : html, css, javascript. pour la réalisation d'un site web pour la présentation de la
+                        section ciel (cybersécurité, informatique et réseaux, électronique) du lycée et un autre pour
+                        les portes ouvertes.
                 </div>
-                <div class="tableauContent">
-                    <div class="tableauText">
-                        <h3 style="font-weight: 100;">stage de deuxième année</h3>
-                        <p style="font-weight: 100;">stage de 1 mois et 2 semaines en entreprise, chez <br><a href="https://www.agarta-agency.fr/" target="_blank">agarta</a><br> en tant que développeur web et web designer ui / ux.
-                            <br><br>
-                            j'ai pu travailler sur un des projets de l'entreprise qui est celui de la refonte graphique de leur plateforme de visualisation 3D avec l'utilisation de Figma pour la maquette et React JS pour l'intégration de celle-ci.
-                        </p>
-                    </div>
-                    <div class="tableauImage">
-                        <img src="public/Images/screen1.png" alt="3ds" width="200">
-                    </div>
+                <div class="tableauImage">
+                    <img src="public/Images/Screen2.png" alt="3ds" width="200">
                 </div>
             </div>
+            <div class="tableauContent">
+                <div class="tableauText">
+                    <h3 style="font-weight: 100;">stage de deuxième année</h3>
+                    <p style="font-weight: 100;">stage de 1 mois et 2 semaines en entreprise, chez <br><a
+                            href="https://www.agarta-agency.fr/" target="_blank">agarta</a><br> en tant que développeur
+                        web et web designer ui / ux.
+                        <br><br>
+                        j'ai pu travailler sur un des projets de l'entreprise qui est celui de la refonte graphique de
+                        leur plateforme de visualisation 3D avec l'utilisation de Figma pour la maquette et React JS
+                        pour l'intégration de celle-ci.
+                    </p>
+                </div>
+                <div class="tableauImage">
+                    <img src="public/Images/screen1.png" alt="3ds" width="200">
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="cutpage">
@@ -407,7 +476,8 @@
         <div class="textContainer">
             <h2 class="title">v e i l l e</h2>
             <p class="sous-title
-                " style="font-size: 18px;">la veille technologique que j’ai choisie traite des différentes ia (intelligence artificielle) connu pour leur génération auditive, textuel, visuelles de tous types.
+                " style="font-size: 18px;">la veille technologique que j’ai choisie traite des différentes ia
+                (intelligence artificielle) connu pour leur génération auditive, textuel, visuelles de tous types.
             </p>
         </div>
         <img src="public/Images/Frise.png" alt="veille" style="width: 70%; height: auto; margin: 0 auto;">
@@ -421,7 +491,9 @@
             <h2 class="title">g l p i</h2>
             <p class="sous-title" style="
                 font-size: 18px;
-                ">glpi est un logiciel libre de gestion des services informatiques et de gestion des services d'assistance. Cette solution libre est éditée en PHP et distribuée sous licence GPL. En tant que technologie libre, toute personne peut exécuter, modifier ou développer le code qui est libre.</p>
+                ">glpi est un logiciel libre de gestion des services informatiques et de gestion des services
+                d'assistance. Cette solution libre est éditée en PHP et distribuée sous licence GPL. En tant que
+                technologie libre, toute personne peut exécuter, modifier ou développer le code qui est libre.</p>
         </div>
         <div class="glpiContainer">
             <div class="glpi animated3">
@@ -447,9 +519,10 @@
         <div class="logo">
             <img src="public/Images/logo.png" alt="logo">
         </div>
-    
+
         <div class="social">
-            <a href="https://linkedin.com/in/marc-pilisi-677372265/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>
+            <a href="https://linkedin.com/in/marc-pilisi-677372265/" target="_blank"><ion-icon
+                    name="logo-linkedin"></ion-icon>
             </a>
             <a href="https://github.com/sonixbeats" target="_blank"><ion-icon name="logo-github"></ion-icon>
             </a>
